@@ -1,8 +1,24 @@
+@import 'colors.css';
+
+:root {
+  --icon_color: #FFFFFF;
+  --border_color: var(--secondary);
+  --background: var(--surface);
+}
+
+* {
+    font-family: "Fira Sans Semibold", "Font Awesome 7 Free", "Font Awesome 7 Brands", "Font Awesome 6 Free", "Font Awesome 6 Brands", FontAwesome, "Material Icons", Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0px;
+}
+
+
 body {
   color: rgb(255 255 255 / 90%);
   font-family: ui-monospace, monospace;
   font-size: 12px;
   overflow: hidden;
+  background: transparent;
 }
 
 html,
@@ -15,6 +31,17 @@ body,
   text-align: center;
 }
 
+.left {
+  margin: 6px 0px 6px 8px;
+}
+
+.right {
+  margin: 6px 8px 6px 0px;
+}
+
+.center {
+  margin: 6px 0px 6px 0px;
+}
 .chip {
   display: inline-block;
   padding: 4px 8px;
@@ -22,3 +49,19 @@ body,
   background: rgb(84, 66, 220);
   margin-right: 4px;
 }
+
+.workspaces {
+    margin: 0px 7px 0px 0px;
+    min-width: 210px;
+}
+
+.workspace button {
+      padding: 0px 6px;
+    margin: 3px 3px;
+    border-radius: 8px;
+    color: --on_surface;
+    background-color: --background;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid --primary;
+}
+
