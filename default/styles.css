@@ -53,15 +53,26 @@ body,
 .workspaces {
     margin: 0px 7px 0px 0px;
     min-width: 210px;
+    display: flex;
+    align-items: center;
 }
 
-.workspace button {
-      padding: 0px 6px;
+.workspace {
+    padding: 0px 6px;
     margin: 3px 3px;
     border-radius: 8px;
     color: --on_surface;
     background-color: --background;
     transition: all 0.3s ease-in-out;
     border: 2px solid --primary;
+
+    &.focused,
+    &:hover {
+      color: --on_surface;
+      background: : --primary_container;
+      border-radius: 15px;
+      border-color: --primary;
+      box-shadow: none;
+    }
 }
 
